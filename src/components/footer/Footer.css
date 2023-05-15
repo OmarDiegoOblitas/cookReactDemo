@@ -1,0 +1,92 @@
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-around;
+    height: 400px;
+}
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerLogo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+ h3{
+    color: pink;
+    font-size: 30px;
+}
+.footerP {
+    width: 400px;
+}
+.footerLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.linkSocial{
+    color: pink;
+    font-size: 24px;
+    cursor: pointer;
+}
+.hours{
+    display: flex;
+    flex-direction: column;
+}
+.footerHours{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hoursTime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.styleIcon{
+    color: pink;
+    font-size: 24px;
+}
+
+.footerContact{
+    display: flex;
+    flex-direction: column;
+}
+.footerContactSection{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+}
+.footerContactInfo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.linkSocial:hover{
+    color: black;
+}
+
+@media (max-width: 720px){
+    .footer{
+        flex-direction: column;
+        padding: 2rem 0;
+        height: 100%;
+    }
+    .footerInfo{
+        gap: .4rem;
+    }
+    .footerHours{
+        gap: .5rem;
+    }
+}

@@ -1,0 +1,39 @@
+.check{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}.mi-clase-checkbox {
+     display: none;
+ }
+.mi-clase-label:before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.mi-clase-checkbox:checked + .mi-clase-label:before {
+    content: '\2713';
+    color: #fff;
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+.mi-clase-label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.mi-clase-label:active {
+    transform: translateY(1px);
+}

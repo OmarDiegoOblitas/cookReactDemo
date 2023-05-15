@@ -1,0 +1,190 @@
+.menu {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+.logo{
+    color: pink;
+    font-size: 30px;
+}
+.logo:hover{
+    color: #282c34;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon > h3 {
+    color: pink;
+}
+
+.icon-rx {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: pink;
+}
+
+.icon-rx:hover {
+    color: lightpink;
+}
+
+.btnLinks {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 0;
+}
+.btnLinks > li > a:hover{
+    color: white;
+    background: pink;
+}
+a{
+    text-decoration: none;
+    color: pink;
+    border: 1px solid pink;
+    border-radius: 2rem;
+    padding: .5rem;
+}
+
+li {
+    list-style: none;
+}
+
+.btn > ul > li > a {
+    text-decoration: none;
+    color: lightpink;
+    border: 1px solid lightpink;
+    padding: .5rem;
+    border-radius: 2rem;
+}
+
+.btn-sign {
+    display: flex;
+    gap: 1rem;
+}
+
+.btnRegister{
+    color: lightpink;
+    background-color: white;
+    border: 1px solid lightpink;
+    padding: .5rem;
+    border-radius: 2rem;
+    font-size: 24px;
+}
+
+.btn-sign > button:hover {
+    cursor: pointer;
+    background-color: pink;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+}
+.btnRoute{
+    display: flex;
+    align-items: center;
+}
+
+.btn.active {
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: relative;;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .btn {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+        cursor: pointer;
+        color: pink;
+        background-color: white;
+        border-radius: 1rem;
+        border: 1px solid pink;
+    }
+
+    .hamburger-line {
+        width: 25px;
+        height: 3px;
+        background-color: pink;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    .open ul,
+    .open .btn-sign {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .ulLinks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+    .navMobile{
+        width: 100px;
+    }
+    .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .close-btn {
+        display: none;
+    }
+    .btn {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+    .mobileA{
+        background-color: black;
+    }
+    .mobileA:hover{
+        background-color: pink;
+        color: white;
+    }
+}
